@@ -1,6 +1,7 @@
 package tsp;
 
 public class City {
+	int id;
     int x;
     int y;
     
@@ -10,12 +11,17 @@ public class City {
         this.y = (int)(Math.random()*200);
     }
     
-    public City(int x, int y){
-        this.x = x;
+    public City(int id, int x, int y){
+        this.id = id;
+    	this.x = x;
         this.y = y;
     }
     
-    public int getX(){
+    public int getId() {
+		return id;
+	}
+
+	public int getX(){
         return this.x;
     }
     
